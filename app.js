@@ -24,12 +24,12 @@ app.get('/berners-lee', (req,res) => {
 });
 
 app.get('/clarke', (req,res) => {
-    let clarkepath = path.join(__dirname, './view/clarke.html')
+    let clarkepath = path.join(__dirname, './views/clarke.html')
     res.sendFile(clarkepath);
 });
 
 app.get('/hamilton', (req,res) => {
-    let hamiltonpath = path.join(__dirname, './view/hamilton.html')
+    let hamiltonpath = path.join(__dirname, './views/hamilton.html')
     res.sendFile(hamiltonpath);
 });
 
