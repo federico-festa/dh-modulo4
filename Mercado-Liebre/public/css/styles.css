@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
@@ -16,8 +17,20 @@ header {
     background-color: #EAC926;
 }
 
-.burger-menu {
-    color: #03264C;
+footer {
+    background-color: white;
+    text-align: center;
+    color:  #666; 
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
 }
 
 .precio {
@@ -29,7 +42,34 @@ header {
 }
 
 .descripciones {
-    font-size: 16px;;
+    font-size: 16px;
+    ;
+}
+
+.footer {
+    text-align: center;
+}
+
+#burger-menu {
+    background-color: #1259c3;
+    text-align: center;
+    align-items: center;
+    color: white;  
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+#burger-menu-cont {
+    text-align: center;
+}
+
+#cuotas {
+    text-align: center;
+    align-items: center;
+}
+
+#icon-ft {
+    color: #1259c3;
 }
 
 /* Secciones a poner estilo: navbar, login bar, search bar.
