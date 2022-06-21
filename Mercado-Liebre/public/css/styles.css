@@ -1,7 +1,10 @@
+/*Estilo general*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -9,26 +12,97 @@ body {
     background-color: #ebebeb;
 }
 
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
 p {
     font-size: 12px;
 }
+
+/*Header*/
+
+header {
+    background-color: #EAC926;
+}
+
+div.top-header {
+    padding: 5%;
+}
+
+header div.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+#cuotas {
+    text-align: center;
+    align-items: center;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+#burger-menu {
+    text-align: center;
+}
+
+#burger-menu i {
+    background-color: #1259c3;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+/*Products*/
 
 h3 {
     font-size: 24px;
     color: #666
 }
 
-header {
-    background-color: #EAC926;
-}
-
-main {
-    width: 90%;
-}
-
 article {
     margin-bottom: 10px;
     text-align: center;
+}
+
+main section article img {
+    width: 100%;
+    margin: 0px;
+}
+
+div.product-box {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin-top: 0px;
+}
+
+div.product-detail {
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #ebebeb;
+    background-color: white;
+    margin-top: 0px;
 }
 
 .product-detail i {
@@ -46,38 +120,12 @@ article {
     color: #39b54a;
 }
 
-footer {
-    background-color: white;
-    text-align: center;
-    color:  #666; 
-}
-
-.navbar {
-    list-style: none;
-    padding: 0;
-}
-
-.navbar li a {
-    text-decoration: none;
-    color: black;
-}
-
-.product-detail {
-    width: 102%;
-    text-align: center;
-    border-top: 1px solid #ebebeb;
-    background-color: white;
-    padding: 15px;
-}
-
 .precio {
-    line-height: 1px;
     text-align: left;
     font-size: 18px;
 }
 
 .descuento {
-    line-height: 1px;
     text-align: left;
     color: #39b54a;
     font-size: 16px;
@@ -89,34 +137,23 @@ footer {
     font-size: 16px;
 }
 
+/*Footer*/
+
+footer {
+    background-color: white;
+    text-align: center;
+    color: #666;
+}
+
 .footer {
     text-align: center;
-}
-
-#burger-menu {
-    background-color: #1259c3;
-    text-align: center;
-    align-items: center;
-    color: white;  
-    border-radius: 8px;
-    font-size: 24px;
-}
-
-#burger-menu-cont {
-    text-align: center;
-}
-
-#cuotas {
-    text-align: center;
-    align-items: center;
 }
 
 #icon-ft {
     color: #1259c3;
 }
 
-/* Secciones a poner estilo: navbar, login bar, search bar.
-
+/*
 Paleta de colores
 Amarillo: #EAC926;
 Azul: #03264C;
@@ -124,13 +161,3 @@ Celeste: #1259c3;
 Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;
-
-Tipografia
-Roboto
-
-Tamaños Tipográficos
-Cuerpos de texto: 12px
-Titulares (Basado en tu última visita/Ofertas): 24px
-Precios: 18px
-Descuentos: 16px
-Descripciones: 16px
