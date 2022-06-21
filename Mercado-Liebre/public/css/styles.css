@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
@@ -11,10 +15,35 @@ p {
 
 h3 {
     font-size: 24px;
+    color: #666
 }
 
 header {
     background-color: #EAC926;
+}
+
+main {
+    width: 90%;
+}
+
+article {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-detail i {
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #39b54a;
 }
 
 footer {
@@ -33,17 +62,31 @@ footer {
     color: black;
 }
 
+.product-detail {
+    width: 102%;
+    text-align: center;
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+}
+
 .precio {
+    line-height: 1px;
+    text-align: left;
     font-size: 18px;
 }
 
 .descuento {
+    line-height: 1px;
+    text-align: left;
+    color: #39b54a;
     font-size: 16px;
 }
 
 .descripciones {
+    color: #666;
+    text-align: left;
     font-size: 16px;
-    ;
 }
 
 .footer {
