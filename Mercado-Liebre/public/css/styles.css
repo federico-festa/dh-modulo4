@@ -5,6 +5,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -25,18 +26,29 @@ p {
 
 header {
     background-color: #EAC926;
+    width: 100%;
+    margin: auto;
 }
 
 div.top-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 5%;
 }
 
 header div.logo {
-    width: 50%;
+    width: 44%;
     padding: 10px;
 }
 
+form.search {
+    padding: 10px;  
+    width: 44%;
+}
+
 #cuotas {
+    margin-top: 5px;
     text-align: center;
     align-items: center;
 }
@@ -44,6 +56,7 @@ header div.logo {
 .navbar {
     list-style: none;
     padding: 0;
+    display: none;
 }
 
 .navbar li a {
@@ -53,20 +66,23 @@ header div.logo {
 }
 
 #burger-menu {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 #burger-menu i {
     background-color: #1259c3;
+    justify-content: center;
     text-align: center;
+    display: flex;
     color: white;
     border-radius: 8px;
     font-size: 20px;
     text-align: center;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     margin: 10px 0px 10px 0px;
-    padding: 10px;
+    padding: 5px;
 }
 
 section.banner img {
@@ -75,17 +91,19 @@ section.banner img {
 
 /*Products*/
 
-h3 {
+main h3 {
     font-size: 24px;
-    color: #666
+    color: #666;
+    text-align: left;
+    margin: 10px 0px 10px;
 }
 
-article {
-    margin-bottom: 10px;
-    text-align: center;
+section.products {
+    display: flex;
+    flex-direction: column;
 }
 
-main section article img {
+main section img {
     width: 100%;
     margin: 0px;
 }
@@ -94,7 +112,7 @@ div.product-box {
     width: 100%;
     text-align: center;
     background-color: white;
-    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 div.product-detail {
@@ -103,21 +121,23 @@ div.product-detail {
     border-top: 2px solid #ebebeb;
     background-color: white;
     margin-top: 0px;
+    display: none;
+    position: relative;
 }
 
-.product-detail i {
-    padding-top: 5px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 5px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid #39b54a;
-    display: flex;
-    align-items: center;
-    text-align: left;
+div.product-detail i {
+    display: block;
     color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 .precio {
@@ -145,13 +165,116 @@ footer {
     color: #666;
 }
 
-.footer {
-    text-align: center;
-}
-
 #icon-ft {
     color: #1259c3;
 }
+
+/*Breakpoints*/
+@media (min-width: 361px) {
+    .navbar {
+        list-style: none;
+        padding: 0;
+        display: block;
+    }
+
+    #burger-menu {
+        text-align: center;
+        display: none;
+    }
+
+    section.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    div.product-box {
+        display: block;
+        width: 45%;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    div.product-detail {
+        width: 100%;
+        text-align: center;
+        border-top: 2px solid #ebebeb;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+
+    .precio {
+        width: 50%;
+        padding: 3%;
+    }
+
+    .descuento {
+        width: 50%;
+        padding: 3%;
+    }
+
+    .descripciones {
+        width: 100%;
+        padding: 3%;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar {
+        list-style: none;
+        padding: 0;
+        display: block;
+    }
+
+    #burger-menu {
+        text-align: center;
+        display: none;
+    }
+
+    section.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.product-box {
+        width: 22%;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }    
+
+    div.product-detail {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        border-top: 2px solid #ebebeb;
+        background-color: white;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .precio {
+        width: 50%;
+        padding: 5%;
+    }
+
+    .descuento {
+        width: 50%;
+        padding: 5%;
+    }
+
+    .descripciones {
+        width: 100%;
+        padding: 4%;
+    }
+}
+
 
 /*
 Paleta de colores
