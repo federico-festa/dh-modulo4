@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/register.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6488dd7609.js" crossorigin="anonymous"></script>
     <title>Mercado Liebre</title>
 </head>
@@ -45,53 +45,11 @@
         <img src="./images/img-home-banner.jpg" alt="banner-ofertas">
     </section>
     <main>
-        <h1>Creá tu cuenta</h1>
-        <form action="/register" method="post">
-            <input type="text" name="name" placeholder="Nombre y apellido" required>
+        <h1>Ingresá</h1>
+        <form action="/login" method="post">
             <input type="text" name="username" placeholder="Nombre de usuario" required>
-
-            <label class="label" for="date">Fecha de nacimiento</label>
-            <input type="date" name="date" id="date" required>
-
-            <input type="text" name="adress" placeholder="Domicilio" required>
-
-            <label class="label" id="profile" for="profile">Perfil del usuario</label>
-            <div class="profile-box">
-                <input type="radio" id="profile" name="profile" value="Comprador">
-                <label for="profile">Comprador</label>
-                <input type="radio" id="profile" name="profile" value="Vendedor">
-                <label for="profile">Vendedor</label>
-            </div>
-            </label>
-
-            <label class="label" id="interests" for="interests">Intereses</label>
-            <div class="interests-box">
-                <div><input type="checkbox" name="interests" id="interests" value="Electro"> <label
-                        for="interests">Electro</label></div>
-                <div><input type="checkbox" name="interests" id="interests" value="Moda">
-                    <label for="interests">Moda</label>
-                </div>
-                <div><input type="checkbox" name="interests" id="interests" value="Hogar">
-                    <label for="interests">Hogar</label>
-                </div>
-                <div><input type="checkbox" name="interests" id="interests" value="Jugueteria">
-                    <label for="interests">Jugueteria</label>
-                </div>
-                <div><input type="checkbox" name="interests" id="interests" value="Vidasana">
-                    <label for="interests">Vidasana</label></div>
-            </div>
-
-            <label class="label" for="avatar">Seleccionar una imagen para el perfil:</label>
-            <input type="file" name="avatar" id="avatar" accept=".jpg, .png">
-
-            <label for="password">Ingrese su contraseña:</label>
-            <input type="password" name="password" id="password">
-
-            <label for="confirm-password">Confirme su contraseña:</label>
-            <input type="password" name="confirm-password" id="confirm-password">
-
-            <a href="/"><button type="button">Registrarse</button></a>
-            <button type="reset">Borrar datos</button>
+            <input type="password" name="password" id="password" placeholder="Ingresá tu contraseña" required>
+            <button type="submit">Enviar</button>
         </form>
     </main>
     <footer>
