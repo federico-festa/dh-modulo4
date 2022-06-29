@@ -142,14 +142,22 @@ main form input {
     padding: 5px;
     border-radius: 4px;
     text-align: left;
+    width: 70%;
 }
 
 main form button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
     border: 0px;
     border-radius: 4px;
-    background-color: #0841a3;
+    background-color: #1259c3;
     color: white;
-    width: 30%;   
+    width: 70%;   
+}
+
+main form button:hover {
+    background-color: #0022AA;
 }
 
 /*Footer*/
@@ -158,6 +166,7 @@ footer {
     background-color: white;
     text-align: center;
     color: #666;
+    width: 100%;
 }
 
 section.footer-text {
@@ -261,5 +270,37 @@ section.footer-text h3 {
     #burger-menu {
         text-align: center;
         display: none;
+    }
+
+    footer {
+        background-color: white;
+        text-align: center;
+        color: #666;
+        display: flex;
+    }
+    
+    section.footer-text {
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    section.footer-text h3 {
+        margin-top: 10px;
+    }
+    
+    #icon-ft {
+        color: #1259c3;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    
+    #icon-ft:hover {
+        color: #EAC926;
+    }
+
+    #copyright {
+        text-align: left;
+        padding: 10px;
+        background-color: white;
     }
 }
