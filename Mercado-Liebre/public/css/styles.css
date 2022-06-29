@@ -141,6 +141,7 @@ div.product-box {
     text-align: center;
     background-color: white;
     margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 div.product-detail {
@@ -166,11 +167,11 @@ div.product-detail i {
     position: absolute;
     right: 20px;
     top: -15px;
-    transition: all 450ms;
 }
 
-div.product-detail i:hover {
+div.product-box:hover div.product-detail i {
     transform: rotateZ(-90deg);
+    transition: all 450ms;
 }
 
 .precio {
@@ -289,6 +290,7 @@ section.footer-text h3 {
         background-color: white;
         margin: 10px;
         transition: all 450ms;
+        box-shadow: none;
     }
 
     div.product-box:hover {
@@ -303,11 +305,6 @@ section.footer-text h3 {
         display: flex;
         flex-wrap: wrap;
         padding: 15px;
-        visibility: hidden;
-    }
-
-    .pd:hover div.product-detail {
-        visibility: visible;
     }
 
     .precio {
@@ -323,6 +320,12 @@ section.footer-text h3 {
     .descripciones {
         width: 100%;
         padding: 3%;
+        color: white;
+    }
+
+    div.product-box:hover .descripciones {
+        color: #666;
+        transition: all 450ms;
     }
 }
 
@@ -393,6 +396,12 @@ section.footer-text h3 {
     .descripciones {
         width: 100%;
         padding: 4%;
+        color: white;
+        transition: all 450ms;
+    }
+
+    .descripciones:hover {
+        color: #666;
     }
 
     footer {
@@ -415,6 +424,7 @@ section.footer-text h3 {
         color: #1259c3;
         font-size: 2em;
         margin-bottom: 10px;
+        transition: all 450ms;
     }
     
     #icon-ft:hover {

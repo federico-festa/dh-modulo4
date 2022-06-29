@@ -455,6 +455,7 @@ section.footer-text h3 {
     }
     
     #icon-ft:hover {
+        transition: all 450ms;
         color: #EAC926;
     }
 
