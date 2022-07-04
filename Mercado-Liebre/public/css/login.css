@@ -196,6 +196,7 @@ section.footer-text h3 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: center;
         padding: 15px;
     }
 
@@ -211,7 +212,7 @@ section.footer-text h3 {
     }
 
     .cuotas {
-        width: 40%;
+        width: 25%;
         margin-top: 20px;
         margin-bottom: 10px;
         text-align: center;
